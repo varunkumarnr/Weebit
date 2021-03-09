@@ -21,7 +21,6 @@ const main = async () => {
         }),
         context: () => ({ em: orm.em })
     })
-
     apolloServer.applyMiddleware({app})
     app.listen(4000, ()=> { 
         console.log('Server is running at')
